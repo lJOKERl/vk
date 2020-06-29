@@ -1,0 +1,29 @@
+.LeftMenu {
+  width: 150px;
+  flex-shrink: 0;
+}
+.LeftMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.LeftMenu ul li {
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+}
+.LeftMenu ul li:hover {
+  background: #e1e5eb;
+}
+.LeftMenu ul li a {
+  color: #285473;
+  text-decoration: none;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+}
+.LeftMenu ul li a svg {
+  margin-right: 0.25em;
+  width: 0.85em;
+  fill: #4a76a8;
+  opacity: 0.5;
+}

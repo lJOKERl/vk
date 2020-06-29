@@ -33,6 +33,7 @@ const AddPost = props => {
             placeholder="Что у вас нового?"
             multiline
             inputRef={postElements}
+            
           />
           {/* <textarea ref={postElements}  name="" id="" cols="30" rows="10"></textarea> */}
       <SendIcon onClick={sendPost} />

@@ -1,12 +1,12 @@
 import React from "react";
-import './style.css';
+import classes from './MenuItem.module.css';
 import { NavLink } from "react-router-dom";
 
 
 const MenuItem = (props) => {
 
   return (
-    <li className="menu_item">
+    <li className={classes.MenuItem}>
       <NavLink to={props.url}>{props.icon}{props.text}</NavLink>
     </li>
   );
