@@ -1,0 +1,27 @@
+@import "../../../vars.less";
+
+.left_menu {
+  width: 150px;
+  height: 500px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: .25em .5em;
+      cursor: pointer;
+
+      &:hover {
+        background: @hover-color;
+      }
+
+      a {
+        color: @link-color;
+        text-decoration: none;
+        font-size: .9em;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.Post {
+  display: flex;
+  margin-bottom: 2em;
+  align-items: center;
+}
+.Post img {
+  width: 50px;
+  border-radius: 50%;
+  margin-top: 0.3em;
+}
+.Post .text {
+  padding: 0 1em;
+  color: #444;
+}

@@ -1,0 +1,19 @@
+.block {
+  padding: 1em;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 0.75em;
+}
+.Messages {
+  padding: 1em;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 0.75em;
+}
+.Messages h3 {
+  margin-top: 0;
+  font-weight: 500;
+  color: #404040;
+}
