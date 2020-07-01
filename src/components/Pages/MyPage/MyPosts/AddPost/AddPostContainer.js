@@ -1,26 +1,32 @@
 import React from "react";
-import classes from './AddPost.module.css';
-import TextField from '@material-ui/core/TextField';
-import SendIcon from '@material-ui/icons/Send';
 import { sendPostActionCreator } from '../../../../../redux/postReducer'
+import { connect } from "react-redux";
+import AddPost from './AddPost'
 
 
-const AddPost = props => {
-  // debugger;
-  let postElements = React.createRef();
-  let sendPost = () => {
-  
-  let text = postElements.current.value;
+let postElements = React.createRef();
 
-  if(text) {
-    props.dispatch(sendPostActionCreator(text))
+const mapStateToProps = (store) => {
+    return {
+      state: store,
+      postElements
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    sendPost() {
+      let text = postElements.current.value;
+
+      if(text) {
+        dispatch(sendPostActionCreator(text))
+      }
+    
+      postElements.current.value = "";
+    }
   }
+}
 
-  postElements.current.value = "";
-  }
-  return (
-    <AddPost/>
-  )
-};
+const AddPostContainer = connect(mapStateToProps, mapDispatchToProps )(AddPost);
 
-export default AddPost; 
+export default AddPostContainer; 

@@ -2,22 +2,10 @@ import React from "react";
 import classes from './AddPost.module.css';
 import TextField from '@material-ui/core/TextField';
 import SendIcon from '@material-ui/icons/Send';
-import { sendPostActionCreator } from '../../../../../redux/postReducer'
-
 
 const AddPost = props => {
-  // debugger;
-  let postElements = React.createRef();
-  let sendPost = () => {
+  console.log(props);
   
-  let text = postElements.current.value;
-
-  if(text) {
-    props.dispatch(sendPostActionCreator(text))
-  }
-
-  postElements.current.value = "";
-  }
   return (
   
     <div className={classes.AddPost}>
@@ -30,11 +18,11 @@ const AddPost = props => {
             fullWidth
             placeholder="Что у вас нового?"
             multiline
-            inputRef={postElements}
+            inputRef={props.postElements}
             
           />
           {/* <textarea ref={postElements}  name="" id="" cols="30" rows="10"></textarea> */}
-      <SendIcon onClick={sendPost} />
+      <SendIcon onClick={props.sendPost} />
     </div>
   )
 };

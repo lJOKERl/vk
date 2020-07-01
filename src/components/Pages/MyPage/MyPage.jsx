@@ -1,16 +1,17 @@
 import React from "react";
 import classes from "./MyPage.module.css";
 import MyPostsContainer from "./MyPosts/MyPostsContainer";
-import AddPost from "./MyPosts/AddPost/AddPost";
+import AddPostContainer from "./MyPosts/AddPost/AddPostContainer";
 
 const MyPage = props => {
-
+  
+  
   return (
     <>
       <div className={classes.MyPage}>
         <h3>Евгений Белоконь</h3>
       </div>
-      <AddPost state={props.state} dispatch={props.dispatch}/>
+      <AddPostContainer store={props.store} />
       <MyPostsContainer store={props.store} />
     </>
   );

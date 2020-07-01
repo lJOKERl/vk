@@ -1,12 +1,13 @@
-import React from "react";
+// import React from "react";
 import MyPosts from "./MyPosts";
+import { connect } from "react-redux";
 
-const MyPostsContainer = props => {
-  let state = props.store.getState();
+const mapStateToProps = (store) => {
+  return {
+    posts: store.posts
+  }
+}
 
-  return (
-    <MyPosts state={state} />
-  )
-};
+const MyPostsContainer = connect( mapStateToProps)(MyPosts);
 
 export default MyPostsContainer; 

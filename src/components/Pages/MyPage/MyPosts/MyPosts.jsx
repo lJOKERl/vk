@@ -9,7 +9,7 @@ const MyPosts = props => {
         <li>Мои записи</li>
       </ul>
 
-      { props.state.posts.map((post, index) => (
+      { props.posts.map((post, index) => (
         <Post key={index} avatar={post.avatar} text={post.text}/>
       )) }
       

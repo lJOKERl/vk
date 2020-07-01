@@ -13,7 +13,7 @@ const Main = props => {
       <Route path="/messages" render={() => (<Messages/>)} />
       <Route path="/friends" render={() => (<Friends />)} />
       <Route path="/news" render={() => (<News/>)} />
-      <Route path="/my-page" render={() => (<MyPage store={props.store} state={props.state} dispatch={props.dispatch}/>)} />
+      <Route path="/my-page" render={() => (<MyPage/>)} />
     </div>
   );
 }

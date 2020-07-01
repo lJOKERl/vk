@@ -19,8 +19,10 @@ const postReducer = (state = initialState, action) => {
         avatar: ava,
         text: action.newText,
       };
-      state.posts.push(newPost);
-      return state;
+      let copyState = {...state}
+      copyState.posts = [...state.posts]
+      copyState.posts.push(newPost);
+      return copyState;
 
     default:
       return state;
