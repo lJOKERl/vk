@@ -10,7 +10,7 @@ const Content = props => {
     <BrowserRouter>
       <div className="main_content">
         <LeftMenu />
-        <Main state={props.state} dispatch={props.dispatch} />
+        <Main state={props.state} store={props.store} dispatch={props.dispatch} />
         {/* <RightMenu /> */}
       </div>
     </BrowserRouter>

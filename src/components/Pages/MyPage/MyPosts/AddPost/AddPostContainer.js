@@ -19,23 +19,7 @@ const AddPost = props => {
   postElements.current.value = "";
   }
   return (
-  
-    <div className={classes.AddPost}>
-      <img
-          src="https://sun9-27.userapi.com/c638320/v638320687/17afd/6RttIh95FCo.jpg?ava=1"
-          alt=""
-        />
-      <TextField
-            id="standard-multiline-flexible"
-            fullWidth
-            placeholder="Что у вас нового?"
-            multiline
-            inputRef={postElements}
-            
-          />
-          {/* <textarea ref={postElements}  name="" id="" cols="30" rows="10"></textarea> */}
-      <SendIcon onClick={sendPost} />
-    </div>
+    <AddPost/>
   )
 };
 

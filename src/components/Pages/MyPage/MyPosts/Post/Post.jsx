@@ -10,7 +10,7 @@ const Post = props => {
         alt=""
       />
       <div className={classes.text}>
-        {props.text}
+        <pre>{props.text}</pre>
       </div>
     </div>
 

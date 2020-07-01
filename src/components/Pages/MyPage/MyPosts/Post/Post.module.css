@@ -12,3 +12,9 @@
   padding: 0 1em;
   color: #444;
 }
+.Post .text pre {
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: break-spaces;
+  margin: 0;
+  line-height: 1.4;
+}

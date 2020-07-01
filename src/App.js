@@ -8,7 +8,7 @@ function App(props) {
     <div className="App">
       <header className="App-header">
         <Header />
-        <Content state={props.state} dispatch={props.dispatch} />
+        <Content state={props.state} store={props.store} dispatch={props.dispatch} />
       </header>
     </div>
   );

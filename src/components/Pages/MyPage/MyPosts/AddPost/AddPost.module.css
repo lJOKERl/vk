@@ -21,4 +21,5 @@
 }
 .AddPost svg {
   fill: #4a76a8;
+  cursor: pointer;
 }
