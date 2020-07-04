@@ -1,0 +1,20 @@
+.block {
+  padding: 1em;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 0.75em;
+}
+.Users {
+  padding: 1em;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 0.75em;
+}
+.Users h3 {
+  margin-top: 0;
+  font-weight: 500;
+  color: #404040;
+}
+/*# sourceMappingURL=Users.module.css.map */

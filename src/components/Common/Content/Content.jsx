@@ -2,8 +2,9 @@ import React from "react";
 import './Content.css';
 import LeftMenu from "./LeftMenu/LeftMenu";
 import Main from "./Main/Main";
+import {BrowserRouter} from "react-router-dom";
 // import RightMenu from "./RightMenu/RightMenu";
-import { BrowserRouter } from "react-router-dom";
+
 
 const Content = props => {
   return (

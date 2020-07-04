@@ -9,8 +9,6 @@ let initialState = {
   ]
 }
 
-
-
 const postReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_POST:
@@ -19,10 +17,11 @@ const postReducer = (state = initialState, action) => {
         avatar: ava,
         text: action.newText,
       };
-      let copyState = {...state}
-      copyState.posts = [...state.posts]
-      copyState.posts.push(newPost);
-      return copyState;
+
+      return  {
+        ...state,
+        posts: [...state.posts, newPost]
+    };
 
     default:
       return state;

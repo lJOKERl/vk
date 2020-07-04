@@ -2,9 +2,9 @@
 import MyPosts from "./MyPosts";
 import { connect } from "react-redux";
 
-const mapStateToProps = (store) => {
+const mapStateToProps = (state) => {
   return {
-    posts: store.posts
+    posts: state.posts
   }
 }
 

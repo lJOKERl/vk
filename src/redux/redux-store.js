@@ -1,12 +1,15 @@
 import postReducer from './postReducer';
-// const { createStore, combineReducers } = require("redux");
-import { createStore } from 'redux';
+import usersReducer from "./usersReducer";
+import {combineReducers, createStore} from "redux";
 
-//// Функция для подключения нескольких редюсеров. Нужен импорт!!!
-// let redusers = combineReducers({
-//   postsReducer
-// });
+// Функция для подключения нескольких редюсеров. Нужен импорт!!!
+let redusers = combineReducers({
+    postReducer: postReducer,
+    usersReducer: usersReducer
+});
 
-let store = createStore(postReducer);
+let store = createStore(redusers);
+
+window.store = store;
 
 export default store;
